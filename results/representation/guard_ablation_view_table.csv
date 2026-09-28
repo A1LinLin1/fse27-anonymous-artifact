@@ -1,0 +1,4 @@
+view,display_name,cases,operation_visible,effect_visible,dependency_path_visible,trust_boundary_visible,guard_visible,guarded_cases,guard_recall_within_confirmed_guarded_cases,context_completeness_numerator,context_completeness_denominator,context_completeness,primary_limitation
+sink_only,Sink-only,9,9,0,0,0,0,5,0.0,9,45,0.2,Cannot distinguish reachable behavior from API presence or guarded from unguarded cases.
+plain_adg,Simplified ADG,9,9,9,0,0,0,5,0.0,18,45,0.4,"Does not preserve security-specific source, trust-boundary, or guard semantics."
+security_adg,Security-ADG,9,9,9,9,9,5,5,1.0,41,45,0.9111,Still qualitative; requires independent held-out labels before reporting accuracy metrics.

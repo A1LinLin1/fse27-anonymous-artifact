@@ -1,0 +1,23 @@
+case_id,repository_id,behavior_category,evidence_level,disposition,disclosure_status,auth_material_supplied
+ALR-001,ASB0026,dynamic_code_execution,controlled runtime; boundary/reachability,vulnerability-level GT,withheld during review,False
+ALR-003,ASB0031,dynamic_code_execution,controlled runtime; boundary/reachability; source trace,boundary/disclosure pending,withheld during review,False
+ALR-004,ASB0002,command_execution,controlled runtime; boundary/reachability; source trace,negative control,not applicable,False
+ALR-005,ASB0042,command_execution,controlled runtime,negative control,not applicable,False
+ALR-006,ASB0018,dynamic_code_execution,controlled runtime; boundary/reachability; source trace,negative control,not applicable,False
+ALR-007,ASB0050,dynamic_code_execution,controlled runtime; boundary/reachability,negative control,not applicable,False
+ALR-008,ASB0020,dynamic_code_execution,boundary/reachability; source trace,negative control,not applicable,False
+ALR-009,ASB0003,dynamic_code_execution,controlled runtime; boundary/reachability; source trace,negative control,not applicable,False
+ALR-010,ASB0024,command_execution,boundary/reachability; source trace,negative control,not applicable,False
+ALR-011,ASB0033,command_execution,source trace,negative control,not applicable,False
+ALR-012,ASB0013,command_execution,boundary/reachability; source trace,negative control,not applicable,False
+ASE-0001-0006.runtime_stub,ASB0013,command_execution,controlled runtime,negative control,not applicable,False
+ASE-0007,ASB0013,command_execution,controlled runtime; stub/monkeypatch; boundary/reachability; source trace,negative control,not applicable,False
+HSQ-0014,ASB0063,command_execution,controlled runtime; stub/monkeypatch; source trace,negative control,not applicable,False
+HSQ-0087,ASB0063,command_execution,controlled runtime; stub/monkeypatch; source trace,negative control,not applicable,False
+HSQ-0089,ASB0063,command_execution,controlled runtime; stub/monkeypatch; source trace,negative control,not applicable,False
+HSQ-0091,ASB0063,command_execution,controlled runtime; stub/monkeypatch; source trace,negative control,not applicable,False
+HSQ-0103,ASB0063,command_execution,controlled runtime; stub/monkeypatch; source trace,negative control,not applicable,False
+HSQ-0211,ASB0008,command_execution,source trace,negative control,not applicable,False
+HSQ-0298,ASB0008,network_access,source trace,negative control,not applicable,False
+HSQ-0300,ASB0008,command_execution,source trace,negative control,not applicable,False
+HSQ-0302,ASB0008,filesystem_write,source trace,negative control,not applicable,False

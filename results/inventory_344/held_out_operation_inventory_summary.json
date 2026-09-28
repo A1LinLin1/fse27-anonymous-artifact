@@ -1,0 +1,28 @@
+{
+  "scope": "unlabelled held-out operation inventory for an exhaustive recall study",
+  "repos": [
+    "dddabtc/winremote-mcp",
+    "nexu-io/html-anything"
+  ],
+  "records": 344,
+  "by_repo": {
+    "dddabtc/winremote-mcp": 148,
+    "nexu-io/html-anything": 196
+  },
+  "by_category": {
+    "browser_control": 27,
+    "command_execution": 76,
+    "dynamic_code_execution": 17,
+    "external_tool_invocation": 58,
+    "filesystem_delete": 15,
+    "filesystem_read": 43,
+    "filesystem_write": 62,
+    "network_access": 46
+  },
+  "discovery_channels": {
+    "independent_operation_lexicon": 235,
+    "static_scanner": 229
+  },
+  "gold_labels_present": false,
+  "warning": "This inventory is not a recall gold set until independently reviewed and adjudicated."
+}

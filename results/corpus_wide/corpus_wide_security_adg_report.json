@@ -1,0 +1,1063 @@
+{
+  "schema_version": "1.0",
+  "scope": "descriptive static candidate and Security-ADG evidence characterization",
+  "claim_boundary": "candidate/evidence counts only; not vulnerability counts and not corpus-wide recall",
+  "population": {
+    "manifest_repositories": 67,
+    "repositories_with_candidates": 65,
+    "source_files_with_candidates": 7214,
+    "candidates": 23866,
+    "agent_framework_evidence": 749,
+    "agent_framework_evidence_rate_pct": 3.14,
+    "source_provenance": 9821,
+    "source_provenance_rate_pct": 41.15,
+    "dependency_path": 9821,
+    "dependency_path_rate_pct": 41.15,
+    "trust_crossing_candidate": 9821,
+    "trust_crossing_candidate_rate_pct": 41.15,
+    "privilege_context": 0,
+    "privilege_context_rate_pct": 0.0,
+    "guard_candidate": 3075,
+    "guard_candidate_rate_pct": 12.88,
+    "external_effect_model": 23866,
+    "external_effect_model_rate_pct": 100.0,
+    "external_effect_confirmed": 0,
+    "external_effect_confirmed_rate_pct": 0.0
+  },
+  "provenance": {
+    "manifest": "dataset\\corpus_manifest.csv",
+    "manifest_sha256": "68b338d0e60a308a165f70032f6c23e56c4b70f4fb4de41ccfe7010bc798d247",
+    "graphs": "analysis\\corpus_wide\\full_67_v2_5_timing\\graphs.jsonl",
+    "graphs_sha256": "7c73795e4cd7fa59d7fe3df01f2cb7e38c6f5a30481719586b26b0d84d015fd7",
+    "graph_summary": "analysis\\corpus_wide\\full_67_v2_5_timing\\graph_summary.json",
+    "scan_run": "analysis\\corpus_wide\\full_67_v2_5_timing\\findings.run.json"
+  },
+  "graph_size": {
+    "median_nodes": 4,
+    "p95_nodes": 6,
+    "median_edges": 3,
+    "p95_edges": 7
+  },
+  "tables": {
+    "category": [
+      {
+        "category": "browser_control",
+        "candidates": 588,
+        "agent_framework_evidence": 1,
+        "agent_framework_evidence_rate_pct": 0.17,
+        "source_provenance": 11,
+        "source_provenance_rate_pct": 1.87,
+        "dependency_path": 11,
+        "dependency_path_rate_pct": 1.87,
+        "trust_crossing_candidate": 11,
+        "trust_crossing_candidate_rate_pct": 1.87,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 13,
+        "guard_candidate_rate_pct": 2.21,
+        "external_effect_model": 588,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "command_execution",
+        "candidates": 2722,
+        "agent_framework_evidence": 10,
+        "agent_framework_evidence_rate_pct": 0.37,
+        "source_provenance": 933,
+        "source_provenance_rate_pct": 34.28,
+        "dependency_path": 933,
+        "dependency_path_rate_pct": 34.28,
+        "trust_crossing_candidate": 933,
+        "trust_crossing_candidate_rate_pct": 34.28,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 315,
+        "guard_candidate_rate_pct": 11.57,
+        "external_effect_model": 2722,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "credential_access",
+        "candidates": 2548,
+        "agent_framework_evidence": 26,
+        "agent_framework_evidence_rate_pct": 1.02,
+        "source_provenance": 251,
+        "source_provenance_rate_pct": 9.85,
+        "dependency_path": 251,
+        "dependency_path_rate_pct": 9.85,
+        "trust_crossing_candidate": 251,
+        "trust_crossing_candidate_rate_pct": 9.85,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 454,
+        "guard_candidate_rate_pct": 17.82,
+        "external_effect_model": 2548,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "database_access",
+        "candidates": 1304,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 106,
+        "source_provenance_rate_pct": 8.13,
+        "dependency_path": 106,
+        "dependency_path_rate_pct": 8.13,
+        "trust_crossing_candidate": 106,
+        "trust_crossing_candidate_rate_pct": 8.13,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 36,
+        "guard_candidate_rate_pct": 2.76,
+        "external_effect_model": 1304,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "dynamic_code_execution",
+        "candidates": 55,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 24,
+        "source_provenance_rate_pct": 43.64,
+        "dependency_path": 24,
+        "dependency_path_rate_pct": 43.64,
+        "trust_crossing_candidate": 24,
+        "trust_crossing_candidate_rate_pct": 43.64,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 23,
+        "guard_candidate_rate_pct": 41.82,
+        "external_effect_model": 55,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "external_tool_invocation",
+        "candidates": 5344,
+        "agent_framework_evidence": 644,
+        "agent_framework_evidence_rate_pct": 12.05,
+        "source_provenance": 603,
+        "source_provenance_rate_pct": 11.28,
+        "dependency_path": 603,
+        "dependency_path_rate_pct": 11.28,
+        "trust_crossing_candidate": 603,
+        "trust_crossing_candidate_rate_pct": 11.28,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 73,
+        "guard_candidate_rate_pct": 1.37,
+        "external_effect_model": 5344,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "filesystem_delete",
+        "candidates": 583,
+        "agent_framework_evidence": 3,
+        "agent_framework_evidence_rate_pct": 0.51,
+        "source_provenance": 235,
+        "source_provenance_rate_pct": 40.31,
+        "dependency_path": 235,
+        "dependency_path_rate_pct": 40.31,
+        "trust_crossing_candidate": 235,
+        "trust_crossing_candidate_rate_pct": 40.31,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 299,
+        "guard_candidate_rate_pct": 51.29,
+        "external_effect_model": 583,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "filesystem_read",
+        "candidates": 4182,
+        "agent_framework_evidence": 19,
+        "agent_framework_evidence_rate_pct": 0.45,
+        "source_provenance": 2730,
+        "source_provenance_rate_pct": 65.28,
+        "dependency_path": 2730,
+        "dependency_path_rate_pct": 65.28,
+        "trust_crossing_candidate": 2730,
+        "trust_crossing_candidate_rate_pct": 65.28,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 1062,
+        "guard_candidate_rate_pct": 25.39,
+        "external_effect_model": 4182,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "filesystem_write",
+        "candidates": 5013,
+        "agent_framework_evidence": 12,
+        "agent_framework_evidence_rate_pct": 0.24,
+        "source_provenance": 4218,
+        "source_provenance_rate_pct": 84.14,
+        "dependency_path": 4218,
+        "dependency_path_rate_pct": 84.14,
+        "trust_crossing_candidate": 4218,
+        "trust_crossing_candidate_rate_pct": 84.14,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 632,
+        "guard_candidate_rate_pct": 12.61,
+        "external_effect_model": 5013,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "message_or_email_send",
+        "candidates": 164,
+        "agent_framework_evidence": 5,
+        "agent_framework_evidence_rate_pct": 3.05,
+        "source_provenance": 70,
+        "source_provenance_rate_pct": 42.68,
+        "dependency_path": 70,
+        "dependency_path_rate_pct": 42.68,
+        "trust_crossing_candidate": 70,
+        "trust_crossing_candidate_rate_pct": 42.68,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 32,
+        "guard_candidate_rate_pct": 19.51,
+        "external_effect_model": 164,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "network_access",
+        "candidates": 1157,
+        "agent_framework_evidence": 29,
+        "agent_framework_evidence_rate_pct": 2.51,
+        "source_provenance": 553,
+        "source_provenance_rate_pct": 47.8,
+        "dependency_path": 553,
+        "dependency_path_rate_pct": 47.8,
+        "trust_crossing_candidate": 553,
+        "trust_crossing_candidate_rate_pct": 47.8,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 121,
+        "guard_candidate_rate_pct": 10.46,
+        "external_effect_model": 1157,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "category": "permission_or_auth_change",
+        "candidates": 206,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 87,
+        "source_provenance_rate_pct": 42.23,
+        "dependency_path": 87,
+        "dependency_path_rate_pct": 42.23,
+        "trust_crossing_candidate": 87,
+        "trust_crossing_candidate_rate_pct": 42.23,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 15,
+        "guard_candidate_rate_pct": 7.28,
+        "external_effect_model": 206,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      }
+    ],
+    "ecosystem": [
+      {
+        "ecosystem": "Agent-Platform",
+        "candidates": 772,
+        "agent_framework_evidence": 34,
+        "agent_framework_evidence_rate_pct": 4.4,
+        "source_provenance": 283,
+        "source_provenance_rate_pct": 36.66,
+        "dependency_path": 283,
+        "dependency_path_rate_pct": 36.66,
+        "trust_crossing_candidate": 283,
+        "trust_crossing_candidate_rate_pct": 36.66,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 115,
+        "guard_candidate_rate_pct": 14.9,
+        "external_effect_model": 772,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "AutoGen",
+        "candidates": 202,
+        "agent_framework_evidence": 1,
+        "agent_framework_evidence_rate_pct": 0.5,
+        "source_provenance": 94,
+        "source_provenance_rate_pct": 46.53,
+        "dependency_path": 94,
+        "dependency_path_rate_pct": 46.53,
+        "trust_crossing_candidate": 94,
+        "trust_crossing_candidate_rate_pct": 46.53,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 19,
+        "guard_candidate_rate_pct": 9.41,
+        "external_effect_model": 202,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "Autonomous-Agent",
+        "candidates": 197,
+        "agent_framework_evidence": 1,
+        "agent_framework_evidence_rate_pct": 0.51,
+        "source_provenance": 62,
+        "source_provenance_rate_pct": 31.47,
+        "dependency_path": 62,
+        "dependency_path_rate_pct": 31.47,
+        "trust_crossing_candidate": 62,
+        "trust_crossing_candidate_rate_pct": 31.47,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 37,
+        "guard_candidate_rate_pct": 18.78,
+        "external_effect_model": 197,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "Coding-Agent",
+        "candidates": 7469,
+        "agent_framework_evidence": 19,
+        "agent_framework_evidence_rate_pct": 0.25,
+        "source_provenance": 4065,
+        "source_provenance_rate_pct": 54.42,
+        "dependency_path": 4065,
+        "dependency_path_rate_pct": 54.42,
+        "trust_crossing_candidate": 4065,
+        "trust_crossing_candidate_rate_pct": 54.42,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 1738,
+        "guard_candidate_rate_pct": 23.27,
+        "external_effect_model": 7469,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "CrewAI",
+        "candidates": 416,
+        "agent_framework_evidence": 31,
+        "agent_framework_evidence_rate_pct": 7.45,
+        "source_provenance": 65,
+        "source_provenance_rate_pct": 15.62,
+        "dependency_path": 65,
+        "dependency_path_rate_pct": 15.62,
+        "trust_crossing_candidate": 65,
+        "trust_crossing_candidate_rate_pct": 15.62,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 41,
+        "guard_candidate_rate_pct": 9.86,
+        "external_effect_model": 416,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "LangChain",
+        "candidates": 5413,
+        "agent_framework_evidence": 42,
+        "agent_framework_evidence_rate_pct": 0.78,
+        "source_provenance": 2707,
+        "source_provenance_rate_pct": 50.01,
+        "dependency_path": 2707,
+        "dependency_path_rate_pct": 50.01,
+        "trust_crossing_candidate": 2707,
+        "trust_crossing_candidate_rate_pct": 50.01,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 414,
+        "guard_candidate_rate_pct": 7.65,
+        "external_effect_model": 5413,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "LlamaIndex",
+        "candidates": 190,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 16,
+        "source_provenance_rate_pct": 8.42,
+        "dependency_path": 16,
+        "dependency_path_rate_pct": 8.42,
+        "trust_crossing_candidate": 16,
+        "trust_crossing_candidate_rate_pct": 8.42,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 14,
+        "guard_candidate_rate_pct": 7.37,
+        "external_effect_model": 190,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "MCP",
+        "candidates": 7650,
+        "agent_framework_evidence": 606,
+        "agent_framework_evidence_rate_pct": 7.92,
+        "source_provenance": 1742,
+        "source_provenance_rate_pct": 22.77,
+        "dependency_path": 1742,
+        "dependency_path_rate_pct": 22.77,
+        "trust_crossing_candidate": 1742,
+        "trust_crossing_candidate_rate_pct": 22.77,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 431,
+        "guard_candidate_rate_pct": 5.63,
+        "external_effect_model": 7650,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "Multi-Agent",
+        "candidates": 1542,
+        "agent_framework_evidence": 13,
+        "agent_framework_evidence_rate_pct": 0.84,
+        "source_provenance": 783,
+        "source_provenance_rate_pct": 50.78,
+        "dependency_path": 783,
+        "dependency_path_rate_pct": 50.78,
+        "trust_crossing_candidate": 783,
+        "trust_crossing_candidate_rate_pct": 50.78,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 265,
+        "guard_candidate_rate_pct": 17.19,
+        "external_effect_model": 1542,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "OpenAI-AgentSDK",
+        "candidates": 8,
+        "agent_framework_evidence": 2,
+        "agent_framework_evidence_rate_pct": 25.0,
+        "source_provenance": 2,
+        "source_provenance_rate_pct": 25.0,
+        "dependency_path": 2,
+        "dependency_path_rate_pct": 25.0,
+        "trust_crossing_candidate": 2,
+        "trust_crossing_candidate_rate_pct": 25.0,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 1,
+        "guard_candidate_rate_pct": 12.5,
+        "external_effect_model": 8,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "ecosystem": "Semantic-Kernel",
+        "candidates": 7,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 2,
+        "source_provenance_rate_pct": 28.57,
+        "dependency_path": 2,
+        "dependency_path_rate_pct": 28.57,
+        "trust_crossing_candidate": 2,
+        "trust_crossing_candidate_rate_pct": 28.57,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 0,
+        "guard_candidate_rate_pct": 0.0,
+        "external_effect_model": 7,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      }
+    ],
+    "language": [
+      {
+        "language": "C#",
+        "candidates": 200,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 39,
+        "source_provenance_rate_pct": 19.5,
+        "dependency_path": 39,
+        "dependency_path_rate_pct": 19.5,
+        "trust_crossing_candidate": 39,
+        "trust_crossing_candidate_rate_pct": 19.5,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 16,
+        "guard_candidate_rate_pct": 8.0,
+        "external_effect_model": 200,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "language": "Go",
+        "candidates": 859,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 69,
+        "source_provenance_rate_pct": 8.03,
+        "dependency_path": 69,
+        "dependency_path_rate_pct": 8.03,
+        "trust_crossing_candidate": 69,
+        "trust_crossing_candidate_rate_pct": 8.03,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 18,
+        "guard_candidate_rate_pct": 2.1,
+        "external_effect_model": 859,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "language": "PHP",
+        "candidates": 49,
+        "agent_framework_evidence": 0,
+        "agent_framework_evidence_rate_pct": 0.0,
+        "source_provenance": 19,
+        "source_provenance_rate_pct": 38.78,
+        "dependency_path": 19,
+        "dependency_path_rate_pct": 38.78,
+        "trust_crossing_candidate": 19,
+        "trust_crossing_candidate_rate_pct": 38.78,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 3,
+        "guard_candidate_rate_pct": 6.12,
+        "external_effect_model": 49,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "language": "Python",
+        "candidates": 20219,
+        "agent_framework_evidence": 700,
+        "agent_framework_evidence_rate_pct": 3.46,
+        "source_provenance": 8991,
+        "source_provenance_rate_pct": 44.47,
+        "dependency_path": 8991,
+        "dependency_path_rate_pct": 44.47,
+        "trust_crossing_candidate": 8991,
+        "trust_crossing_candidate_rate_pct": 44.47,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 2811,
+        "guard_candidate_rate_pct": 13.9,
+        "external_effect_model": 20219,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "language": "Rust",
+        "candidates": 1213,
+        "agent_framework_evidence": 10,
+        "agent_framework_evidence_rate_pct": 0.82,
+        "source_provenance": 164,
+        "source_provenance_rate_pct": 13.52,
+        "dependency_path": 164,
+        "dependency_path_rate_pct": 13.52,
+        "trust_crossing_candidate": 164,
+        "trust_crossing_candidate_rate_pct": 13.52,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 54,
+        "guard_candidate_rate_pct": 4.45,
+        "external_effect_model": 1213,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      },
+      {
+        "language": "TypeScript",
+        "candidates": 1326,
+        "agent_framework_evidence": 39,
+        "agent_framework_evidence_rate_pct": 2.94,
+        "source_provenance": 539,
+        "source_provenance_rate_pct": 40.65,
+        "dependency_path": 539,
+        "dependency_path_rate_pct": 40.65,
+        "trust_crossing_candidate": 539,
+        "trust_crossing_candidate_rate_pct": 40.65,
+        "privilege_context": 0,
+        "privilege_context_rate_pct": 0.0,
+        "guard_candidate": 173,
+        "guard_candidate_rate_pct": 13.05,
+        "external_effect_model": 1326,
+        "external_effect_model_rate_pct": 100.0,
+        "external_effect_confirmed": 0,
+        "external_effect_confirmed_rate_pct": 0.0
+      }
+    ]
+  },
+  "runtime": {
+    "available": true,
+    "stages": [
+      {
+        "stage": "candidate_extraction",
+        "population_count": 23866,
+        "wall_seconds": 1508.455983,
+        "candidates_per_second": 15.821,
+        "process_peak_rss_bytes": null,
+        "python_peak_allocated_bytes": null
+      },
+      {
+        "stage": "graph_construction",
+        "population_count": 23866,
+        "wall_seconds": 1538.163634,
+        "candidates_per_second": 15.516,
+        "process_peak_rss_bytes": null,
+        "python_peak_allocated_bytes": null
+      }
+    ],
+    "report_population_count": 23866,
+    "population_consistent": true,
+    "end_to_end_comparable": true,
+    "population_note": "All supplied runtime stages use the report population.",
+    "repositories_profiled": 67,
+    "median_repository_seconds": 9.56216,
+    "p90_repository_seconds": 203.008459,
+    "p95_repository_seconds": 236.190525,
+    "per_repository": [
+      {
+        "repo": "Akhilvallala2023/agentic-calendar-assistant",
+        "candidate_extraction_seconds": 0.342268,
+        "graph_construction_seconds": 0.403146,
+        "total_seconds": 0.745414
+      },
+      {
+        "repo": "Azure-Samples/llm-agent-ops-toolkit-sk",
+        "candidate_extraction_seconds": 0.962712,
+        "graph_construction_seconds": 0.326917,
+        "total_seconds": 1.289629
+      },
+      {
+        "repo": "Azure/data-api-builder",
+        "candidate_extraction_seconds": 13.769414,
+        "graph_construction_seconds": 0.86958,
+        "total_seconds": 14.638994
+      },
+      {
+        "repo": "DmytroPetrushenko/nmap_tool_superagi",
+        "candidate_extraction_seconds": 0.431931,
+        "graph_construction_seconds": 0.283732,
+        "total_seconds": 0.715663
+      },
+      {
+        "repo": "FSoft-AI4Code/AgileCoder",
+        "candidate_extraction_seconds": 10.416204,
+        "graph_construction_seconds": 9.469163,
+        "total_seconds": 19.885367
+      },
+      {
+        "repo": "Gald3r-Labs/gald3r",
+        "candidate_extraction_seconds": 48.828191,
+        "graph_construction_seconds": 226.143048,
+        "total_seconds": 274.971239
+      },
+      {
+        "repo": "GobinFan/python-mcp-server-client",
+        "candidate_extraction_seconds": 0.409932,
+        "graph_construction_seconds": 0.432602,
+        "total_seconds": 0.842534
+      },
+      {
+        "repo": "GongRzhe/Office-PowerPoint-MCP-Server",
+        "candidate_extraction_seconds": 4.084862,
+        "graph_construction_seconds": 5.649405,
+        "total_seconds": 9.734267
+      },
+      {
+        "repo": "Haohao-end/openagent",
+        "candidate_extraction_seconds": 188.877348,
+        "graph_construction_seconds": 72.888349,
+        "total_seconds": 261.765697
+      },
+      {
+        "repo": "IvanMurzak/Unity-MCP",
+        "candidate_extraction_seconds": 20.784097,
+        "graph_construction_seconds": 8.451997,
+        "total_seconds": 29.236094
+      },
+      {
+        "repo": "JoshuaC215/agent-service-toolkit",
+        "candidate_extraction_seconds": 1.324712,
+        "graph_construction_seconds": 1.387966,
+        "total_seconds": 2.712678
+      },
+      {
+        "repo": "Kyros-494/kyros-ai",
+        "candidate_extraction_seconds": 4.450259,
+        "graph_construction_seconds": 5.111901,
+        "total_seconds": 9.56216
+      },
+      {
+        "repo": "LLemonStack/llemonstack",
+        "candidate_extraction_seconds": 2.427341,
+        "graph_construction_seconds": 1.125864,
+        "total_seconds": 3.553205
+      },
+      {
+        "repo": "MODSetter/SurfSense",
+        "candidate_extraction_seconds": 88.184538,
+        "graph_construction_seconds": 46.121832,
+        "total_seconds": 134.30637
+      },
+      {
+        "repo": "Mcp-Brasil/mcp-brasil",
+        "candidate_extraction_seconds": 21.433206,
+        "graph_construction_seconds": 5.628736,
+        "total_seconds": 27.061942
+      },
+      {
+        "repo": "OpenCoworkAI/open-cowork",
+        "candidate_extraction_seconds": 11.000331,
+        "graph_construction_seconds": 8.883179,
+        "total_seconds": 19.88351
+      },
+      {
+        "repo": "PrefectHQ/fastmcp",
+        "candidate_extraction_seconds": 42.621808,
+        "graph_construction_seconds": 185.503318,
+        "total_seconds": 228.125126
+      },
+      {
+        "repo": "QuantaAlpha/RepoMaster",
+        "candidate_extraction_seconds": 3.776393,
+        "graph_construction_seconds": 12.537245,
+        "total_seconds": 16.313638
+      },
+      {
+        "repo": "SWE-agent/SWE-ReX",
+        "candidate_extraction_seconds": 1.273939,
+        "graph_construction_seconds": 1.062179,
+        "total_seconds": 2.336118
+      },
+      {
+        "repo": "SWE-agent/SWE-agent",
+        "candidate_extraction_seconds": 5.662803,
+        "graph_construction_seconds": 2.632809,
+        "total_seconds": 8.295612
+      },
+      {
+        "repo": "SWE-agent/mini-swe-agent",
+        "candidate_extraction_seconds": 3.813863,
+        "graph_construction_seconds": 3.101079,
+        "total_seconds": 6.914942
+      },
+      {
+        "repo": "SWE-bench/SWE-smith",
+        "candidate_extraction_seconds": 12.577119,
+        "graph_construction_seconds": 20.06957,
+        "total_seconds": 32.646689
+      },
+      {
+        "repo": "Sylinko/Everywhere",
+        "candidate_extraction_seconds": 257.629598,
+        "graph_construction_seconds": 11.130118,
+        "total_seconds": 268.759716
+      },
+      {
+        "repo": "XpressAI/xai-gpt-agent-toolkit",
+        "candidate_extraction_seconds": 0.699124,
+        "graph_construction_seconds": 2.277708,
+        "total_seconds": 2.976832
+      },
+      {
+        "repo": "arjunprabhulal/mcp-llama3-client",
+        "candidate_extraction_seconds": 1.359348,
+        "total_seconds": 1.359348
+      },
+      {
+        "repo": "asheshgoplani/agent-deck",
+        "candidate_extraction_seconds": 50.859761,
+        "graph_construction_seconds": 17.618848,
+        "total_seconds": 68.478609
+      },
+      {
+        "repo": "augmentcode/augment-swebench-agent",
+        "candidate_extraction_seconds": 1.468215,
+        "graph_construction_seconds": 1.641617,
+        "total_seconds": 3.109832
+      },
+      {
+        "repo": "baltagiyc/ai-agents-code-interpreter",
+        "candidate_extraction_seconds": 0.79654,
+        "graph_construction_seconds": 0.290685,
+        "total_seconds": 1.087225
+      },
+      {
+        "repo": "bethington/ghidra-mcp",
+        "candidate_extraction_seconds": 26.233192,
+        "graph_construction_seconds": 127.829563,
+        "total_seconds": 154.062755
+      },
+      {
+        "repo": "blazickjp/arxiv-mcp-server",
+        "candidate_extraction_seconds": 1.91633,
+        "graph_construction_seconds": 1.720807,
+        "total_seconds": 3.637137
+      },
+      {
+        "repo": "bytedance/deer-flow",
+        "candidate_extraction_seconds": 56.040988,
+        "graph_construction_seconds": 165.306789,
+        "total_seconds": 221.347777
+      },
+      {
+        "repo": "china-qijizhifeng/agentic-harness-engineering",
+        "candidate_extraction_seconds": 5.126622,
+        "graph_construction_seconds": 46.922822,
+        "total_seconds": 52.049444
+      },
+      {
+        "repo": "coder/agentapi",
+        "candidate_extraction_seconds": 1.275539,
+        "graph_construction_seconds": 0.461064,
+        "total_seconds": 1.736603
+      },
+      {
+        "repo": "comet-ml/opik",
+        "candidate_extraction_seconds": 198.006706,
+        "graph_construction_seconds": 38.183819,
+        "total_seconds": 236.190525
+      },
+      {
+        "repo": "crewAIInc/crewAI-tools",
+        "candidate_extraction_seconds": 5.021596,
+        "graph_construction_seconds": 6.885442,
+        "total_seconds": 11.907038
+      },
+      {
+        "repo": "dddabtc/winremote-mcp",
+        "candidate_extraction_seconds": 1.182857,
+        "graph_construction_seconds": 13.038725,
+        "total_seconds": 14.221582
+      },
+      {
+        "repo": "didilili/ai-agents-from-zero",
+        "candidate_extraction_seconds": 37.620444,
+        "graph_construction_seconds": 25.899486,
+        "total_seconds": 63.51993
+      },
+      {
+        "repo": "dinglebear-ai/unraid",
+        "candidate_extraction_seconds": 13.74139,
+        "graph_construction_seconds": 13.376592,
+        "total_seconds": 27.117982
+      },
+      {
+        "repo": "dzh-gitcode/dify-workflows",
+        "candidate_extraction_seconds": 2.254881,
+        "graph_construction_seconds": 1.434969,
+        "total_seconds": 3.68985
+      },
+      {
+        "repo": "georgeantonopoulos/Basecamp-MCP-Server",
+        "candidate_extraction_seconds": 3.392691,
+        "graph_construction_seconds": 25.383514,
+        "total_seconds": 28.776205
+      },
+      {
+        "repo": "grll/mcpadapt",
+        "candidate_extraction_seconds": 1.39177,
+        "graph_construction_seconds": 1.413328,
+        "total_seconds": 2.805098
+      },
+      {
+        "repo": "guaardvark/guaardvark",
+        "candidate_extraction_seconds": 51.621321,
+        "graph_construction_seconds": 118.2446,
+        "total_seconds": 169.865921
+      },
+      {
+        "repo": "hannesrudolph/sqlite-explorer-fastmcp-mcp-server",
+        "candidate_extraction_seconds": 0.536655,
+        "graph_construction_seconds": 0.33138,
+        "total_seconds": 0.868035
+      },
+      {
+        "repo": "hashgraph-online/hashnet-mcp-js",
+        "candidate_extraction_seconds": 1.735853,
+        "graph_construction_seconds": 0.565984,
+        "total_seconds": 2.301837
+      },
+      {
+        "repo": "headroomlabs-ai/headroom",
+        "candidate_extraction_seconds": 60.344971,
+        "graph_construction_seconds": 142.663488,
+        "total_seconds": 203.008459
+      },
+      {
+        "repo": "heshengtao/comfyui_LLM_party",
+        "candidate_extraction_seconds": 6.800221,
+        "graph_construction_seconds": 8.721117,
+        "total_seconds": 15.521338
+      },
+      {
+        "repo": "johnxie/awesome-code-docs",
+        "candidate_extraction_seconds": 2.703337,
+        "graph_construction_seconds": 3.455349,
+        "total_seconds": 6.158686
+      },
+      {
+        "repo": "langtalks/swe-agent",
+        "candidate_extraction_seconds": 0.359352,
+        "graph_construction_seconds": 1.251802,
+        "total_seconds": 1.611154
+      },
+      {
+        "repo": "mantrakp04/manusmcp",
+        "candidate_extraction_seconds": 1.224819,
+        "graph_construction_seconds": 2.497914,
+        "total_seconds": 3.722733
+      },
+      {
+        "repo": "microsoft/magentic-ui",
+        "candidate_extraction_seconds": 7.001541,
+        "graph_construction_seconds": 13.613184,
+        "total_seconds": 20.614725
+      },
+      {
+        "repo": "moltis-org/moltis",
+        "candidate_extraction_seconds": 40.124046,
+        "graph_construction_seconds": 8.110045,
+        "total_seconds": 48.234091
+      },
+      {
+        "repo": "mukul975/cve-mcp-server",
+        "candidate_extraction_seconds": 2.228766,
+        "graph_construction_seconds": 3.157086,
+        "total_seconds": 5.385852
+      },
+      {
+        "repo": "natesanshreyas/autogen-github-agent",
+        "candidate_extraction_seconds": 1.148945,
+        "graph_construction_seconds": 0.532261,
+        "total_seconds": 1.681206
+      },
+      {
+        "repo": "ndavidson19/open-devin",
+        "candidate_extraction_seconds": 0.363496,
+        "graph_construction_seconds": 0.416174,
+        "total_seconds": 0.77967
+      },
+      {
+        "repo": "neph1/FinnhubToolkit",
+        "candidate_extraction_seconds": 0.227908,
+        "graph_construction_seconds": 0.414123,
+        "total_seconds": 0.642031
+      },
+      {
+        "repo": "nexu-io/html-anything",
+        "candidate_extraction_seconds": 2.706907,
+        "graph_construction_seconds": 2.773785,
+        "total_seconds": 5.480692
+      },
+      {
+        "repo": "relaticle/relaticle",
+        "candidate_extraction_seconds": 11.198649,
+        "graph_construction_seconds": 3.739154,
+        "total_seconds": 14.937803
+      },
+      {
+        "repo": "rocketride-org/rocketride-server",
+        "candidate_extraction_seconds": 46.208732,
+        "graph_construction_seconds": 45.265222,
+        "total_seconds": 91.473954
+      },
+      {
+        "repo": "shamspias/customizable-gpt-chatbot",
+        "candidate_extraction_seconds": 1.635803,
+        "graph_construction_seconds": 2.111536,
+        "total_seconds": 3.747339
+      },
+      {
+        "repo": "stickerdaniel/linkedin-mcp-server",
+        "candidate_extraction_seconds": 6.370115,
+        "graph_construction_seconds": 32.133869,
+        "total_seconds": 38.503984
+      },
+      {
+        "repo": "tadata-org/fastapi_mcp",
+        "candidate_extraction_seconds": 0.844861,
+        "graph_construction_seconds": 2.116362,
+        "total_seconds": 2.961223
+      },
+      {
+        "repo": "tecno-consultores/llm-lab",
+        "candidate_extraction_seconds": 0.292082,
+        "total_seconds": 0.292082
+      },
+      {
+        "repo": "utensils/mcp-nixos",
+        "candidate_extraction_seconds": 2.352886,
+        "graph_construction_seconds": 1.752251,
+        "total_seconds": 4.105137
+      },
+      {
+        "repo": "wangzpap/ZpAgent",
+        "candidate_extraction_seconds": 0.700673,
+        "graph_construction_seconds": 0.687442,
+        "total_seconds": 1.388115
+      },
+      {
+        "repo": "wshobson/maverick-mcp",
+        "candidate_extraction_seconds": 7.885417,
+        "graph_construction_seconds": 4.318391,
+        "total_seconds": 12.203808
+      },
+      {
+        "repo": "yvgude/lean-ctx",
+        "candidate_extraction_seconds": 95.059262,
+        "graph_construction_seconds": 9.975562,
+        "total_seconds": 105.034824
+      },
+      {
+        "repo": "zinja-coder/zin-mcp-client",
+        "candidate_extraction_seconds": 0.692495,
+        "graph_construction_seconds": 0.747938,
+        "total_seconds": 1.440433
+      }
+    ],
+    "end_to_end_wall_seconds": 3046.619617,
+    "end_to_end_candidates_per_second": 7.834
+  },
+  "labels_used": false
+}

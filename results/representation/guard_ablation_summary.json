@@ -1,0 +1,1187 @@
+{
+  "behavior_families": {
+    "agent CLI discovery process": 1,
+    "application launch": 1,
+    "desktop notification script": 1,
+    "external content file write": 1,
+    "external tarball extraction": 1,
+    "network diagnostic process": 1,
+    "service control": 1,
+    "shell command execution": 1,
+    "validated skill file write": 1
+  },
+  "case_count": 9,
+  "case_view_rows": [
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "shell command execution",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0014",
+      "display_name": "Sink-only",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0014.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/__main__.py",
+      "source_line": 493,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "shell command execution",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0014",
+      "display_name": "Simplified ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0014.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/__main__.py",
+      "source_line": 493,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "shell command execution",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0014",
+      "display_name": "Security-ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0014.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 4,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit; no guard evidence is confirmed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "src/winremote/__main__.py",
+      "source_line": 493,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "application launch",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0087",
+      "display_name": "Sink-only",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0087.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/desktop.py",
+      "source_line": 248,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "application launch",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0087",
+      "display_name": "Simplified ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0087.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/desktop.py",
+      "source_line": 248,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "application launch",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0087",
+      "display_name": "Security-ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0087.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 4,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit; no guard evidence is confirmed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "src/winremote/desktop.py",
+      "source_line": 248,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "desktop notification script",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0089",
+      "display_name": "Sink-only",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0089.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "guarded",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/desktop.py",
+      "source_line": 332,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "desktop notification script",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0089",
+      "display_name": "Simplified ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0089.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "guarded",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/desktop.py",
+      "source_line": 332,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "desktop notification script",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0089",
+      "display_name": "Security-ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0089.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 5,
+      "guard_posture": "guarded",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit and guard evidence is preserved.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": true,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "src/winremote/desktop.py",
+      "source_line": 332,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "network diagnostic process",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0091",
+      "display_name": "Sink-only",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0091.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/network.py",
+      "source_line": 9,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "network diagnostic process",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0091",
+      "display_name": "Simplified ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0091.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/network.py",
+      "source_line": 9,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "network diagnostic process",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0091",
+      "display_name": "Security-ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0091.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 4,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit; no guard evidence is confirmed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "src/winremote/network.py",
+      "source_line": 9,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "service control",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0103",
+      "display_name": "Sink-only",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0103.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "guarded",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/services.py",
+      "source_line": 8,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "service control",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0103",
+      "display_name": "Simplified ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0103.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "guarded",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "src/winremote/services.py",
+      "source_line": 8,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "service control",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0103",
+      "display_name": "Security-ADG",
+      "ecosystem": "MCP / desktop automation",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0103.latest.json",
+      "evidence_mode": "local monkeypatch proof",
+      "expressive_context_fields": 5,
+      "guard_posture": "guarded",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit and guard evidence is preserved.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "dddabtc/winremote-mcp",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": true,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "src/winremote/services.py",
+      "source_line": 8,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "agent CLI discovery process",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0211",
+      "display_name": "Sink-only",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0211.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/agents/detect.ts",
+      "source_line": 387,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "agent CLI discovery process",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0211",
+      "display_name": "Simplified ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0211.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/agents/detect.ts",
+      "source_line": 387,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "agent CLI discovery process",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0211",
+      "display_name": "Security-ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0211.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 4,
+      "guard_posture": "no_guard_confirmed",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit; no guard evidence is confirmed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "next/src/lib/agents/detect.ts",
+      "source_line": 387,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "external content file write",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0298",
+      "display_name": "Sink-only",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0298.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "guarded",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 146,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "external content file write",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0298",
+      "display_name": "Simplified ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0298.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "guarded",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 146,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "external content file write",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0298",
+      "display_name": "Security-ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0298.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 5,
+      "guard_posture": "guarded",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit and guard evidence is preserved.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": true,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 146,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "external tarball extraction",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0300",
+      "display_name": "Sink-only",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0300.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "guarded",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 246,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "external tarball extraction",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0300",
+      "display_name": "Simplified ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0300.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "guarded",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 246,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "external tarball extraction",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0300",
+      "display_name": "Security-ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0300.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 5,
+      "guard_posture": "guarded",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit and guard evidence is preserved.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": true,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 246,
+      "view": "security_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "validated skill file write",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0302",
+      "display_name": "Sink-only",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0302.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 1,
+      "guard_posture": "guarded",
+      "interpretation": "API/operation presence only; guard and dependency context are invisible.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": false,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 348,
+      "view": "sink_only"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "validated skill file write",
+      "can_distinguish_guarded_from_unguarded": false,
+      "case_id": "HSQ-0302",
+      "display_name": "Simplified ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0302.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 2,
+      "guard_posture": "guarded",
+      "interpretation": "Operation/effect structure is visible, but source dependency and guard posture are collapsed.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect"
+      ],
+      "sees_dependency_path": false,
+      "sees_effect": true,
+      "sees_guard": false,
+      "sees_operation": true,
+      "sees_trust_boundary": false,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 348,
+      "view": "plain_adg"
+    },
+    {
+      "applicable_context_count": 5,
+      "applicable_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "behavior_family": "validated skill file write",
+      "can_distinguish_guarded_from_unguarded": true,
+      "case_id": "HSQ-0302",
+      "display_name": "Security-ADG",
+      "ecosystem": "Coding agent / skill marketplace",
+      "evidence_file": "analysis/reproduction/heldout/HSQ-0302.latest.json",
+      "evidence_mode": "source-level construction proof",
+      "expressive_context_fields": 5,
+      "guard_posture": "guarded",
+      "interpretation": "Security context is visible: dependency path and trust boundary are explicit and guard evidence is preserved.",
+      "reference_context": {
+        "dependency": true,
+        "effect": true,
+        "guard_posture": true,
+        "operation": true,
+        "trust_boundary": true
+      },
+      "repository": "nexu-io/html-anything",
+      "retained_context_fields": [
+        "operation",
+        "effect",
+        "dependency",
+        "trust_boundary",
+        "guard_posture"
+      ],
+      "sees_dependency_path": true,
+      "sees_effect": true,
+      "sees_guard": true,
+      "sees_operation": true,
+      "sees_trust_boundary": true,
+      "source_file": "next/src/lib/skills/install.ts",
+      "source_line": 348,
+      "view": "security_adg"
+    }
+  ],
+  "ecosystems": {
+    "Coding agent / skill marketplace": 4,
+    "MCP / desktop automation": 5
+  },
+  "guard_postures": {
+    "guarded": 5,
+    "no_guard_confirmed": 4
+  },
+  "guarded_cases": 5,
+  "headline": {
+    "plain_adg_guard_visible": 0,
+    "security_adg_context_completeness": 0.9111,
+    "security_adg_guard_visible": 5,
+    "sink_only_guard_visible": 0
+  },
+  "human_labels_used": false,
+  "model_labels_used": false,
+  "purpose": "guard-aware representation ablation for held-out evidence-backed cases; not a final metric report",
+  "repositories": {
+    "dddabtc/winremote-mcp": 5,
+    "nexu-io/html-anything": 4
+  },
+  "schema_version": "1.0",
+  "source_matrix_claim_boundary": "qualitative local/source evidence only; join to independent held-out gold before reporting precision, recall, or F1",
+  "view_rows": [
+    {
+      "cases": 9,
+      "context_completeness": 0.2,
+      "context_completeness_denominator": 45,
+      "context_completeness_numerator": 9,
+      "definition": "A security-sensitive API or operation is present.",
+      "dependency_path_visible": 0,
+      "display_name": "Sink-only",
+      "effect_visible": 0,
+      "guard_recall_within_confirmed_guarded_cases": 0.0,
+      "guard_visible": 0,
+      "guarded_cases": 5,
+      "operation_visible": 9,
+      "primary_limitation": "Cannot distinguish reachable behavior from API presence or guarded from unguarded cases.",
+      "trust_boundary_visible": 0,
+      "view": "sink_only"
+    },
+    {
+      "cases": 9,
+      "context_completeness": 0.4,
+      "context_completeness_denominator": 45,
+      "context_completeness_numerator": 18,
+      "definition": "The program contains a security-sensitive operation that may cause an external effect.",
+      "dependency_path_visible": 0,
+      "display_name": "Simplified ADG",
+      "effect_visible": 9,
+      "guard_recall_within_confirmed_guarded_cases": 0.0,
+      "guard_visible": 0,
+      "guarded_cases": 5,
+      "operation_visible": 9,
+      "primary_limitation": "Does not preserve security-specific source, trust-boundary, or guard semantics.",
+      "trust_boundary_visible": 0,
+      "view": "plain_adg"
+    },
+    {
+      "cases": 9,
+      "context_completeness": 0.9111,
+      "context_completeness_denominator": 45,
+      "context_completeness_numerator": 41,
+      "definition": "The graph preserves operation, effect, source/dependency, trust-boundary, and guard evidence.",
+      "dependency_path_visible": 9,
+      "display_name": "Security-ADG",
+      "effect_visible": 9,
+      "guard_recall_within_confirmed_guarded_cases": 1.0,
+      "guard_visible": 5,
+      "guarded_cases": 5,
+      "operation_visible": 9,
+      "primary_limitation": "Still qualitative; requires independent held-out labels before reporting accuracy metrics.",
+      "trust_boundary_visible": 9,
+      "view": "security_adg"
+    }
+  ]
+}

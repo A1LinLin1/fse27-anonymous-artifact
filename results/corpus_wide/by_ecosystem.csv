@@ -1,0 +1,12 @@
+ecosystem,candidates,agent_framework_evidence,agent_framework_evidence_rate_pct,source_provenance,source_provenance_rate_pct,dependency_path,dependency_path_rate_pct,trust_crossing_candidate,trust_crossing_candidate_rate_pct,privilege_context,privilege_context_rate_pct,guard_candidate,guard_candidate_rate_pct,external_effect_model,external_effect_model_rate_pct,external_effect_confirmed,external_effect_confirmed_rate_pct
+Agent-Platform,772,34,4.4,283,36.66,283,36.66,283,36.66,0,0.0,115,14.9,772,100.0,0,0.0
+AutoGen,202,1,0.5,94,46.53,94,46.53,94,46.53,0,0.0,19,9.41,202,100.0,0,0.0
+Autonomous-Agent,197,1,0.51,62,31.47,62,31.47,62,31.47,0,0.0,37,18.78,197,100.0,0,0.0
+Coding-Agent,7469,19,0.25,4065,54.42,4065,54.42,4065,54.42,0,0.0,1738,23.27,7469,100.0,0,0.0
+CrewAI,416,31,7.45,65,15.62,65,15.62,65,15.62,0,0.0,41,9.86,416,100.0,0,0.0
+LangChain,5413,42,0.78,2707,50.01,2707,50.01,2707,50.01,0,0.0,414,7.65,5413,100.0,0,0.0
+LlamaIndex,190,0,0.0,16,8.42,16,8.42,16,8.42,0,0.0,14,7.37,190,100.0,0,0.0
+MCP,7650,606,7.92,1742,22.77,1742,22.77,1742,22.77,0,0.0,431,5.63,7650,100.0,0,0.0
+Multi-Agent,1542,13,0.84,783,50.78,783,50.78,783,50.78,0,0.0,265,17.19,1542,100.0,0,0.0
+OpenAI-AgentSDK,8,2,25.0,2,25.0,2,25.0,2,25.0,0,0.0,1,12.5,8,100.0,0,0.0
+Semantic-Kernel,7,0,0.0,2,28.57,2,28.57,2,28.57,0,0.0,0,0.0,7,100.0,0,0.0

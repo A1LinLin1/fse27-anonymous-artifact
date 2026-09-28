@@ -1,0 +1,13 @@
+category,candidates,agent_framework_evidence,agent_framework_evidence_rate_pct,source_provenance,source_provenance_rate_pct,dependency_path,dependency_path_rate_pct,trust_crossing_candidate,trust_crossing_candidate_rate_pct,privilege_context,privilege_context_rate_pct,guard_candidate,guard_candidate_rate_pct,external_effect_model,external_effect_model_rate_pct,external_effect_confirmed,external_effect_confirmed_rate_pct
+browser_control,588,1,0.17,11,1.87,11,1.87,11,1.87,0,0.0,13,2.21,588,100.0,0,0.0
+command_execution,2722,10,0.37,933,34.28,933,34.28,933,34.28,0,0.0,315,11.57,2722,100.0,0,0.0
+credential_access,2548,26,1.02,251,9.85,251,9.85,251,9.85,0,0.0,454,17.82,2548,100.0,0,0.0
+database_access,1304,0,0.0,106,8.13,106,8.13,106,8.13,0,0.0,36,2.76,1304,100.0,0,0.0
+dynamic_code_execution,55,0,0.0,24,43.64,24,43.64,24,43.64,0,0.0,23,41.82,55,100.0,0,0.0
+external_tool_invocation,5344,644,12.05,603,11.28,603,11.28,603,11.28,0,0.0,73,1.37,5344,100.0,0,0.0
+filesystem_delete,583,3,0.51,235,40.31,235,40.31,235,40.31,0,0.0,299,51.29,583,100.0,0,0.0
+filesystem_read,4182,19,0.45,2730,65.28,2730,65.28,2730,65.28,0,0.0,1062,25.39,4182,100.0,0,0.0
+filesystem_write,5013,12,0.24,4218,84.14,4218,84.14,4218,84.14,0,0.0,632,12.61,5013,100.0,0,0.0
+message_or_email_send,164,5,3.05,70,42.68,70,42.68,70,42.68,0,0.0,32,19.51,164,100.0,0,0.0
+network_access,1157,29,2.51,553,47.8,553,47.8,553,47.8,0,0.0,121,10.46,1157,100.0,0,0.0
+permission_or_auth_change,206,0,0.0,87,42.23,87,42.23,87,42.23,0,0.0,15,7.28,206,100.0,0,0.0

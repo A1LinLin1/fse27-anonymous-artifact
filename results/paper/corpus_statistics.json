@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "repositories": 67,
+    "ecosystems": 11,
+    "source_files": 37542,
+    "source_bytes": 291169338,
+    "source_megabytes_decimal": 291.169,
+    "frozen_commits": 67,
+    "manifest_clean_worktrees": 66,
+    "current_audit_clean_worktrees": 67,
+    "current_audit_publication_gate": "pass",
+    "selection_priority": {
+      "HIGH": 67
+    }
+  },
+  "ecosystems": [
+    {
+      "ecosystem": "MCP",
+      "repositories": 23,
+      "source_files": 13144,
+      "source_bytes": 120833901,
+      "source_megabytes_decimal": 120.834
+    },
+    {
+      "ecosystem": "Coding-Agent",
+      "repositories": 14,
+      "source_files": 3793,
+      "source_bytes": 32041604,
+      "source_megabytes_decimal": 32.042
+    },
+    {
+      "ecosystem": "LangChain",
+      "repositories": 7,
+      "source_files": 16824,
+      "source_bytes": 107886888,
+      "source_megabytes_decimal": 107.887
+    },
+    {
+      "ecosystem": "Agent-Platform",
+      "repositories": 6,
+      "source_files": 1209,
+      "source_bytes": 7267349,
+      "source_megabytes_decimal": 7.267
+    },
+    {
+      "ecosystem": "Autonomous-Agent",
+      "repositories": 5,
+      "source_files": 229,
+      "source_bytes": 1400512,
+      "source_megabytes_decimal": 1.401
+    },
+    {
+      "ecosystem": "LlamaIndex",
+      "repositories": 4,
+      "source_files": 188,
+      "source_bytes": 1319091,
+      "source_megabytes_decimal": 1.319
+    },
+    {
+      "ecosystem": "Multi-Agent",
+      "repositories": 3,
+      "source_files": 1560,
+      "source_bytes": 17100421,
+      "source_megabytes_decimal": 17.1
+    },
+    {
+      "ecosystem": "AutoGen",
+      "repositories": 2,
+      "source_files": 348,
+      "source_bytes": 2310832,
+      "source_megabytes_decimal": 2.311
+    },
+    {
+      "ecosystem": "CrewAI",
+      "repositories": 1,
+      "source_files": 206,
+      "source_bytes": 900177,
+      "source_megabytes_decimal": 0.9
+    },
+    {
+      "ecosystem": "OpenAI-AgentSDK",
+      "repositories": 1,
+      "source_files": 3,
+      "source_bytes": 12709,
+      "source_megabytes_decimal": 0.013
+    },
+    {
+      "ecosystem": "Semantic-Kernel",
+      "repositories": 1,
+      "source_files": 38,
+      "source_bytes": 95854,
+      "source_megabytes_decimal": 0.096
+    }
+  ],
+  "dominant_languages": [
+    {
+      "dominant_language": "Python",
+      "repositories": 51,
+      "share_percent": 76.1
+    },
+    {
+      "dominant_language": "TypeScript",
+      "repositories": 7,
+      "share_percent": 10.4
+    },
+    {
+      "dominant_language": "C#",
+      "repositories": 3,
+      "share_percent": 4.5
+    },
+    {
+      "dominant_language": "Rust",
+      "repositories": 2,
+      "share_percent": 3.0
+    },
+    {
+      "dominant_language": "Go",
+      "repositories": 2,
+      "share_percent": 3.0
+    },
+    {
+      "dominant_language": "PHP",
+      "repositories": 1,
+      "share_percent": 1.5
+    },
+    {
+      "dominant_language": "Shell",
+      "repositories": 1,
+      "share_percent": 1.5
+    }
+  ]
+}

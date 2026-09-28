@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "purpose": "paper-facing evidence scale snapshot with explicit claim boundaries",
+  "claim_boundary": "This aggregates evidence scale, not a single accuracy metric. Layers have different evidentiary strength.",
+  "inputs": {
+    "corpus_statistics": "H:/datasets/AgentSecBench/analysis/paper/corpus_statistics.json",
+    "full_static_run": "H:/datasets/AgentSecBench/analysis/full_corpus_static_findings_v1.run.json",
+    "panel_summary": "H:/datasets/AgentSecBench/annotations/model_annotation/runs/panel_v3_hybrid/summary.json",
+    "model_audit_summary": "H:/datasets/AgentSecBench/analysis/model_audit/reviewer03/summary.json",
+    "provisional_summary": "H:/datasets/AgentSecBench/analysis/provisional/reviewer03_model_assisted_summary.json",
+    "development_metrics": "H:/datasets/AgentSecBench/analysis/provisional/development_v2_1_codeql_v2_diagnostic_metrics.json",
+    "heldout_inventory": "H:/datasets/AgentSecBench/annotations/recall_inventory/held_out_operation_inventory_summary.json",
+    "heldout_silver": "H:/datasets/AgentSecBench/analysis/heldout/model_assisted_silver_summary_partial.json",
+    "agent_ladder": "H:/datasets/AgentSecBench/analysis/agent_discovery/evidence_ladder/agent_evidence_ladder.json",
+    "agent_detection": "H:/datasets/AgentSecBench/analysis/agent_discovery/case_detection_evaluation_v1/agent_case_detection_evaluation.json",
+    "heldout_reproduction_snapshot": "H:/datasets/AgentSecBench/analysis/paper_results/paper_results_snapshot.json"
+  },
+  "layers": [
+    {
+      "layer": "Frozen corpus",
+      "n": 67,
+      "unit": "repositories",
+      "evidence_strength": "dataset",
+      "supports": "Benchmark scale and ecosystem coverage",
+      "does_not_support": "Behavior/vulnerability prevalence by itself",
+      "details": {
+        "ecosystems": 11,
+        "source_files": 37542,
+        "source_megabytes_decimal": 291.169,
+        "frozen_commits": 67
+      }
+    },
+    {
+      "layer": "Full-corpus raw static scan",
+      "n": 25953,
+      "unit": "raw candidate hits",
+      "evidence_strength": "candidate_generation",
+      "supports": "Scale of operation discovery input",
+      "does_not_support": "Vulnerability count or confirmed security behavior",
+      "details": {
+        "scanned_repositories": 66,
+        "skipped": [
+          {
+            "sample_id": "ASB0024",
+            "repo": "Haohao-end/openagent",
+            "reason": "explicit_platform_incompatible_git_archive"
+          }
+        ]
+      }
+    },
+    {
+      "layer": "Five-model annotation panel",
+      "n": 750,
+      "unit": "model calls",
+      "evidence_strength": "model_panel",
+      "supports": "Breadth of model-assisted screening",
+      "does_not_support": "Independent ground truth",
+      "details": {
+        "tasks": 150,
+        "providers": [
+          "anthropic",
+          "deepseek",
+          "gemini",
+          "openai",
+          "qwen"
+        ],
+        "cost_usd": 7.367518
+      }
+    },
+    {
+      "layer": "Reviewer03 model-assisted audit",
+      "n": 150,
+      "unit": "reviewed tasks",
+      "evidence_strength": "single_reviewer_provisional",
+      "supports": "Larger provisional label distribution and case selection",
+      "does_not_support": "Blind human agreement or final gold labels",
+      "details": {
+        "accepted_plurality_rate": 0.7,
+        "field_match_rate": 0.997078,
+        "behavior_positive": 70,
+        "dependency_positive_strict": 40,
+        "held_out_evaluation_split": 100
+      }
+    },
+    {
+      "layer": "Provisional development diagnostic",
+      "n": 50,
+      "unit": "reviewed development tasks",
+      "evidence_strength": "development_diagnostic",
+      "supports": "Early method diagnostics against provisional labels",
+      "does_not_support": "Final held-out performance",
+      "details": {
+        "security_adg_v2_1_dependency_ppv": 0.7222222222222222,
+        "security_adg_v2_1_dependency_coverage": 0.7222222222222222,
+        "codeql_dependency_ppv": 0.6666666666666666,
+        "codeql_dependency_coverage": 0.1111111111111111
+      }
+    },
+    {
+      "layer": "Held-out operation inventory",
+      "n": 344,
+      "unit": "operation inventory records",
+      "evidence_strength": "unadjudicated_inventory",
+      "supports": "Recall-study worklist scale",
+      "does_not_support": "Recall denominator until adjudicated",
+      "details": {
+        "repos": {
+          "dddabtc/winremote-mcp": 148,
+          "nexu-io/html-anything": 196
+        },
+        "categories": {
+          "browser_control": 27,
+          "command_execution": 76,
+          "dynamic_code_execution": 17,
+          "external_tool_invocation": 58,
+          "filesystem_delete": 15,
+          "filesystem_read": 43,
+          "filesystem_write": 62,
+          "network_access": 46
+        },
+        "gold_labels_present": false
+      }
+    },
+    {
+      "layer": "Held-out model-assisted silver labels",
+      "n": 256,
+      "unit": "silver-labeled tasks",
+      "evidence_strength": "model_assisted_silver",
+      "supports": "Large-scale sensitivity analysis and prioritization",
+      "does_not_support": "Human gold or final benchmark metrics",
+      "details": {
+        "threshold": 4,
+        "providers": [
+          "zai",
+          "anthropic",
+          "gemini",
+          "qwen",
+          "deepseek"
+        ],
+        "human_labels_used": false
+      }
+    },
+    {
+      "layer": "Agent ALR/ASE reviewed cases",
+      "n": 14,
+      "unit": "reviewed agent cases",
+      "evidence_strength": "reviewed_case_evidence",
+      "supports": "Positive/downgraded case-study evidence and sink-only over-reporting analysis",
+      "does_not_support": "Full-corpus automatic detection accuracy",
+      "details": {
+        "by_highest_tier": {
+          "boundary_confirmed": 1,
+          "reachability": 3,
+          "negative_or_downgraded": 10
+        },
+        "case_detection_summary": {
+          "security_adg_curated": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "tn": 10,
+            "support": 14,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "specificity": 1.0
+          },
+          "sink_only": {
+            "tp": 4,
+            "fp": 10,
+            "fn": 0,
+            "tn": 0,
+            "support": 14,
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "f1": 0.4444444444444444,
+            "specificity": 0.0
+          },
+          "predefined_sink": {
+            "tp": 4,
+            "fp": 10,
+            "fn": 0,
+            "tn": 0,
+            "support": 14,
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "f1": 0.4444444444444444,
+            "specificity": 0.0
+          }
+        }
+      }
+    },
+    {
+      "layer": "Held-out reproduction cases",
+      "n": 9,
+      "unit": "local/source reproduction cases",
+      "evidence_strength": "reproduction_backed_case_study",
+      "supports": "Qualitative RQ3/RQ4 case studies and representation ablation",
+      "does_not_support": "Precision/recall or vulnerability prevalence",
+      "details": {
+        "confirmed_behavior_cases": 9,
+        "guarded_cases": 5,
+        "repositories": {
+          "dddabtc/winremote-mcp": 5,
+          "nexu-io/html-anything": 4
+        }
+      }
+    }
+  ]
+}

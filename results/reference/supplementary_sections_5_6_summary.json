@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "reference_cases": 22,
+  "reference_repositories": 13,
+  "corpus_repositories": 67,
+  "ecosystems": 11,
+  "adapters": 7,
+  "dispositions": {
+    "boundary/disclosure pending": 1,
+    "negative control": 20,
+    "vulnerability-level GT": 1
+  },
+  "outputs": {
+    "reference_csv": "H:\\datasets\\AgentSecBench\\analysis\\paper\\supplementary\\reference_set_disclosure_safe.csv",
+    "manifest_csv": "H:\\datasets\\AgentSecBench\\analysis\\paper\\supplementary\\corpus_manifest_public.csv",
+    "latex": "H:\\datasets\\AgentSecBench\\analysis\\paper\\supplementary\\supplementary_sections_5_6.tex"
+  }
+}

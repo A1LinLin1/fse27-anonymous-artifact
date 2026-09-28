@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "purpose": "reference relations for four representative agent case studies; not a population-level gold set",
+  "claim_boundary": "This oracle is built from already-reviewed case evidence. It evaluates representation coverage for paper case studies, not automatic discovery accuracy or CVE eligibility.",
+  "relations": [
+    "operation",
+    "behavior_category",
+    "input_source",
+    "dependency_path",
+    "trust_boundary",
+    "guard_context",
+    "external_effect",
+    "reachability_or_boundary_evidence"
+  ],
+  "cases": [
+    {
+      "id": "ALR-001",
+      "repo": "comet-ml/opik",
+      "commit": "d6c2776e31a4bd66f345019fc3c2af3e7c2cf570",
+      "file": "apps/opik-python-backend/src/opik_backend/process_worker.py",
+      "line": 278,
+      "operation": "exec(code, module.__dict__)",
+      "behavior_category": "dynamic_code_execution",
+      "relations": {
+        "operation": true,
+        "behavior_category": true,
+        "input_source": true,
+        "dependency_path": true,
+        "trust_boundary": true,
+        "guard_context": true,
+        "external_effect": true,
+        "reachability_or_boundary_evidence": true
+      },
+      "evidence_basis": [
+        "analysis/agent_discovery/reproduction_readiness/ALR-001.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ALR-001.boundary.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ALR-001.case.json"
+      ]
+    },
+    {
+      "id": "ALR-003",
+      "repo": "heshengtao/comfyui_LLM_party",
+      "commit": "3790b26a438bb8e77c1ad24d93870f710cc8ae41",
+      "file": "tools/interpreter.py",
+      "line": 16,
+      "operation": "exec(code_str, local_vars, local_vars)",
+      "behavior_category": "dynamic_code_execution",
+      "relations": {
+        "operation": true,
+        "behavior_category": true,
+        "input_source": true,
+        "dependency_path": true,
+        "trust_boundary": true,
+        "guard_context": true,
+        "external_effect": true,
+        "reachability_or_boundary_evidence": true
+      },
+      "evidence_basis": [
+        "analysis/agent_discovery/reproduction_readiness/ALR-003.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ALR-003.reachability.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ALR-003.case.json"
+      ]
+    },
+    {
+      "id": "ALR-007",
+      "repo": "FSoft-AI4Code/AgileCoder",
+      "commit": "f9924185bcc8db9ba504e588e1a425920d4dd9db",
+      "file": "agilecoder/camel/prompts/base.py",
+      "line": 189,
+      "operation": "exec(self, global_vars, local_vars)",
+      "behavior_category": "dynamic_code_execution",
+      "relations": {
+        "operation": true,
+        "behavior_category": true,
+        "input_source": true,
+        "dependency_path": true,
+        "trust_boundary": true,
+        "guard_context": true,
+        "external_effect": true,
+        "reachability_or_boundary_evidence": true
+      },
+      "evidence_basis": [
+        "analysis/agent_discovery/reproduction_readiness/ALR-007.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ALR-007.reachability.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ALR-007.case.json"
+      ]
+    },
+    {
+      "id": "ASE-0007",
+      "repo": "QuantaAlpha/RepoMaster",
+      "commit": "9cf59930102970d61d6eb2f702fd936d3cda7f11",
+      "file": "src/core/git_task.py",
+      "line": 124,
+      "operation": "subprocess.run(clone_cmd, shell=True, check=True)",
+      "behavior_category": "command_execution",
+      "relations": {
+        "operation": true,
+        "behavior_category": true,
+        "input_source": true,
+        "dependency_path": true,
+        "trust_boundary": true,
+        "guard_context": true,
+        "external_effect": true,
+        "reachability_or_boundary_evidence": true
+      },
+      "evidence_basis": [
+        "analysis/agent_discovery/reproduction_readiness/ASE-0007.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ASE-0007.runtime_stub.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ASE-0007.reachability.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ASE-0007.frontend_boundary.latest.json",
+        "analysis/agent_discovery/reproduction_readiness/ASE-0007.case.json"
+      ]
+    }
+  ]
+}

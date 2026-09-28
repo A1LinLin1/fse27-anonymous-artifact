@@ -1,0 +1,7 @@
+language,candidates,agent_framework_evidence,agent_framework_evidence_rate_pct,source_provenance,source_provenance_rate_pct,dependency_path,dependency_path_rate_pct,trust_crossing_candidate,trust_crossing_candidate_rate_pct,privilege_context,privilege_context_rate_pct,guard_candidate,guard_candidate_rate_pct,external_effect_model,external_effect_model_rate_pct,external_effect_confirmed,external_effect_confirmed_rate_pct
+C#,200,0,0.0,39,19.5,39,19.5,39,19.5,0,0.0,16,8.0,200,100.0,0,0.0
+Go,859,0,0.0,69,8.03,69,8.03,69,8.03,0,0.0,18,2.1,859,100.0,0,0.0
+PHP,49,0,0.0,19,38.78,19,38.78,19,38.78,0,0.0,3,6.12,49,100.0,0,0.0
+Python,20219,700,3.46,8991,44.47,8991,44.47,8991,44.47,0,0.0,2811,13.9,20219,100.0,0,0.0
+Rust,1213,10,0.82,164,13.52,164,13.52,164,13.52,0,0.0,54,4.45,1213,100.0,0,0.0
+TypeScript,1326,39,2.94,539,40.65,539,40.65,539,40.65,0,0.0,173,13.05,1326,100.0,0,0.0
